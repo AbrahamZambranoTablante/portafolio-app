@@ -1,0 +1,34 @@
+.navbar-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px brown;
+    position: sticky; /* Sticks to the viewport */
+    top: 0; /* Locks it to the top */
+    z-index: 1000; /* Ensures it stays above other content */
+
+    .logo{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            height: 70px;
+            width: 70px;
+            border-radius: 50px;
+        }
+    }
+
+    .links {
+        display: flex;
+    
+        p{
+            margin-left: 25px;
+        }
+    
+    }
+
+}
+
+

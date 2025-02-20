@@ -1,0 +1,17 @@
+.home-container {
+    img{
+        height: 550px;
+        border-radius: 50%;
+    }
+
+    span {
+        font-family:cursive;
+        font-size: 50px;
+        color: #2767df;
+    }
+
+    h2{
+        font-size:50px;
+    }
+}
+
