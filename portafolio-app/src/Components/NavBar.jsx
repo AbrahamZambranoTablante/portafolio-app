@@ -14,6 +14,7 @@ export default function NavBar () {
                         <Link to={"/blog"}><p className="blog-button">BLOG</p> </Link>
                         <Link to={"/contact"}><p className="contact-button">CONTACT</p> </Link>
                         <Link to={"/projects"}><p className="projects-button">PROJECTS</p> </Link>
+                        <Link to={"/virtualagent"}><p className="virtualagent-button">VIRTUAL AGENT</p> </Link>
                     </div>
                 </div>
 
