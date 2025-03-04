@@ -8,14 +8,14 @@ export default function NavBar () {
             <div className="navbar-container">
                 <div className="navbar-sections">
                     <div className="logo">
-                    <Link to={"/"}><img src="/azlogo.jpg" alt="Logo" /> </Link>
+                        <Link to={"/"}><img src="/azlogo.jpg" alt="Logo" /> </Link>
                     </div>
-                    <div className="links">
-                        <Link to={"/blog"}><p className="blog-button">BLOG</p> </Link>
-                        <Link to={"/contact"}><p className="contact-button">CONTACT</p> </Link>
-                        <Link to={"/projects"}><p className="projects-button">PROJECTS</p> </Link>
-                        <Link to={"/virtualagent"}><p className="virtualagent-button">VIRTUAL AGENT</p> </Link>
-                    </div>
+                    <nav className="links">
+                        <a className="nav-link" href="#blog">BLOG</a> 
+                        <a className="nav-link" href="#contact">CONTACT</a> 
+                        <a className="nav-link" href="#projects">PROJECTS</a> 
+                        <Link to={"/virtualagent"}><a className="nav-link">VIRTUAL AGENT</a> </Link>
+                    </nav>
                 </div>
 
             </div>

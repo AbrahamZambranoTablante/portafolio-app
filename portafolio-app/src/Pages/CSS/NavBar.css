@@ -23,7 +23,7 @@
     .links {
         display: flex;
     
-        p{
+        .nav-link {
             margin-left: 25px;
         }
     
