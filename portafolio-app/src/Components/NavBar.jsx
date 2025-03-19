@@ -20,6 +20,9 @@ export default function NavBar ({scrollToProjects, scrollToContact, scrollToBlog
                         <button className="nav-link" onClick={scrollToContact}>CONTACT</button> 
                         <button className="nav-link" onClick={scrollToProjects}>PROJECTS</button> 
                         <Link to={"/virtualagent"}><a className="nav-link">VIRTUAL AGENT</a> </Link>
+                        <a href="/Resume_Abraham Zambrano Tablante.pdf" download="Abraham_Resume.pdf" className="nav-link">
+                            <button>DONWLOAD MY RESUME</button>
+                        </a>
                     </nav>
                 </div>
 
