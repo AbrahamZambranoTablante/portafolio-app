@@ -1,17 +1,14 @@
 import { useRef } from 'react';
 import './App.css';
-
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-
 import NavBar from './Components/NavBar';
 import Home from './Pages/Home';
-
 import NotFound from './Pages/NotFound';
 import VirtualAgent from './Pages/VirtualAgent';
 
 function App() {
 
-  const projectsRef = useRef(null);
+    const projectsRef = useRef(null);
     const contactRef = useRef(null);
     const blogRef = useRef(null);
 
