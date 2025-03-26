@@ -1,4 +1,4 @@
-.home-container {
+/* .home-container {
     img{
         height: 350px;
         border-radius: 50%;
@@ -13,5 +13,68 @@
     h1{
         font-size: 100px;
     }
+
+    section {
+        scroll-margin-top: 80px; 
+    }
+} 
+*/
+
+
+/* Center the entire home container */
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    min-height: 100vh; /* Full screen height */
+    text-align: center; /* Ensure text is centered */
+    padding: 20px; /* Add spacing */
 }
 
+/* Center the profile content */
+.profile__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center everything horizontally */
+    justify-content: center; /* Center vertically */
+    max-width: 800px; /* Keep it readable */
+    width: 100%;
+}
+
+/* Profile picture styling */
+.profile__picture img {
+    width: 150px; /* Adjust size */
+    height: 150px;
+    border-radius: 50%; /* Make it circular */
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+/* Style the text sections */
+.profile__name h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.profile__quote {
+    font-size: 1.5rem;
+    font-style: italic;
+    color: #aaa;
+    margin-bottom: 20px;
+}
+
+.profile__description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 600px;
+}
+
+/* Center sections */
+section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+}

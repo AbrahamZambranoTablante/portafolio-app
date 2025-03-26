@@ -2,10 +2,14 @@ import { Link } from "react-router-dom"
 import '../Pages/CSS/NavBar.css'
 import React from "react"
 
-export default function NavBar ({scrollToProjects, scrollToContact, scrollToBlog}) {
+export default function NavBar ({scrollToProjects, scrollToContact, scrollToBlog, darkMode, setDarkMode}) {
 
     const scrollToTop = () => {
         window.scrollTo({ top: 0, behavior: "smooth" });
+    };
+
+    const toggleTheme = () => {
+        setDarkMode(!darkMode);
     };
     
     return (
@@ -23,6 +27,11 @@ export default function NavBar ({scrollToProjects, scrollToContact, scrollToBlog
                         <a href="/Resume_Abraham Zambrano Tablante.pdf" download="Abraham_Resume.pdf" className="nav-link">
                             DONWLOAD MY RESUME
                         </a>
+                            {/* Toggle Switch */}
+                        <label className="switch">
+                            <input type="checkbox" checked={darkMode} onChange={toggleTheme} />
+                            <span className="slider round"></span>
+                        </label>   
                     </nav>
                 </div>
 
