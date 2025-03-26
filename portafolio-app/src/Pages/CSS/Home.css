@@ -44,8 +44,8 @@
 
 /* Profile picture styling */
 .profile__picture img {
-    width: 150px; /* Adjust size */
-    height: 150px;
+    width: 250px; /* Adjust size */
+    height: 250px;
     border-radius: 50%; /* Make it circular */
     object-fit: cover;
     margin-bottom: 20px;

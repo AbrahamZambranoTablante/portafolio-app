@@ -2,7 +2,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: solid 1px brown;
     position: sticky; /* Sticks to the viewport */
     top: 0; /* Locks it to the top */
     z-index: 1000; /* Ensures it stays above other content */

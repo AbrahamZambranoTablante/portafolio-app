@@ -1,0 +1,96 @@
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Title Styling */
+.contact-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    font-size: 24px;
+    color: var(--text-color);
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #2196F3;
+    transform: scale(1.2);
+}
+
+/* Contact Form */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px; /* Adjust the form width */
+    width: 100%;
+    margin: 0 auto; /* Centers the form */
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%; /* Makes input fields take full width of the form */
+    max-width: 500px; /* Restricts maximum width */
+    padding: 12px;
+    border: 1px solid rgb(78, 77, 77);
+    border-radius: 5px;
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    font-size: 1rem;
+    transition: border 0.3s ease, background-color 0.3s ease;
+    margin: 0 auto; /* Ensures it's centered */
+}
+
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border: 1px solid #4CAF50;
+    outline: none;
+}
+
+.contact-form textarea {
+    height: 150px;
+    resize: none;
+}
+
+/* Send Button */
+/* Send Button */
+.contact-form button {
+    background-color: #4CAF50;
+    max-width: 150px;
+    color: white;
+    font-size: 1rem;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin: 0 auto; /* Ensures the button is centered */
+    display: block; /* Helps with centering in a flex container */
+}
+
+
+.contact-form button:hover {
+    background-color: rgb(12, 116, 45);
+    transform: scale(1.05);
+}
