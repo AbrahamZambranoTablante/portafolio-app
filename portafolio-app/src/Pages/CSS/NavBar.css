@@ -2,9 +2,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    position: sticky; /* Sticks to the viewport */
-    top: 0; /* Locks it to the top */
-    z-index: 1000; /* Ensures it stays above other content */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: var(--navbar-bg);
+    backdrop-filter: blur(10px);
+    padding: 10px 20px;
+    width: 100%;
+    transition: background-color 0.3s ease;
 
     .logo{
 
@@ -25,7 +30,7 @@
     
         .nav-link {
             margin-left: 25px;
-            background-color: #4CAF50;
+            background-color: rgba(76, 175, 80, 0.8); /* Slight transparency */
             color: white;
             border: none;
             padding: 10px 15px;
@@ -107,3 +112,14 @@ input:checked + .slider:before {
 }
 
 
+:root {
+    --navbar-bg: rgba(255, 255, 255, 0.8); /* Light mode background */
+    --navbar-text: #333;
+    --nav-button-bg: rgba(76, 175, 80, 0.8);
+}
+
+.dark-mode {
+    --navbar-bg: rgba(26, 26, 26, 0.8); /* Dark mode background */
+    --navbar-text: white;
+    --nav-button-bg: rgba(69, 160, 73, 0.9);
+}
