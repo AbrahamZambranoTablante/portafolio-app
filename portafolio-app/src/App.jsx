@@ -42,7 +42,7 @@ function App() {
             darkMode={darkMode} setDarkMode={setDarkMode}
           />
           <Routes>
-            <Route path="/" element={<Home projectsRef={projectsRef} contactRef={contactRef} blogRef={blogRef}/>}/>
+            <Route path="/" element={<Home projectsRef={projectsRef} contactRef={contactRef} darkMode={darkMode} blogRef={blogRef}/>}/>
             <Route path='/virtualagent' element={ <VirtualAgent /> } />
             <Route path='*' element={ <NotFound /> } />
           </Routes>

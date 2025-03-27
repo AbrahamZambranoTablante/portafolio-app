@@ -1,5 +1,5 @@
 import '../Pages/CSS/Projects.css';
-export default function Projects({ projectsRef }) {
+export default function Projects({ projectsRef, darkMode }) {
     const projects = [
         {
             name: "Pat.io",
@@ -22,7 +22,7 @@ export default function Projects({ projectsRef }) {
     ];
 
     return (
-        <section ref={projectsRef} className="projects-section" id="projects">
+        <section ref={projectsRef} className={`projects-section ${darkMode ? "dark" : "light"}`} id="projects">
             <h2>My Projects</h2>
             <div className="projects-container">
                 <div className="projects-scroll">

@@ -3,7 +3,7 @@ import Contact from './Contact';
 import Projects from './Projects';
 import Blog from './Blog';
 
-export default function Home ({projectsRef, contactRef, blogRef}) {
+export default function Home ({projectsRef, contactRef, blogRef, darkMode}) {
 
     return (
         <>
@@ -30,7 +30,7 @@ export default function Home ({projectsRef, contactRef, blogRef}) {
                 </div>
 
                 <section ref={projectsRef}>
-                    <Projects/>
+                    <Projects darkMode={darkMode} />
                 </section>
 
                 <section ref={blogRef}>
