@@ -19,7 +19,7 @@ export default function Home ({projectsRef, contactRef, blogRef, darkMode}) {
                     </div>
 
                     <h2 className="profile__quote">
-                        <span>"</span>guebo y cuca pa siempre<span>"</span>
+                        <span>"</span>Money comes and goes, time doesn't<span>"</span>
                     </h2>
 
                     <div className="profile__description">
