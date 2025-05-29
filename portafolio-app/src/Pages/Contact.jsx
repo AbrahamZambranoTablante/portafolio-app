@@ -20,7 +20,7 @@ export default function Contact() {
         e.preventDefault();
 
         emailjs.send(
-            "service_87a7knd", // Replace with your EmailJS service ID
+            "service_s92k7xg", // Replace with your EmailJS service ID
             "template_omrxm9s", // Replace with your EmailJS template ID
             formData,
             "vHTGZrNx4ORrCkhva" // Replace with your EmailJS public key

@@ -23,6 +23,11 @@ export default function NavBar({ scrollToVirtual, scrollToProjects, scrollToCont
 
     return (
         <>
+            {/* Toggle Switch */}
+            <label className="switch">
+                <input type="checkbox" checked={darkMode} onChange={toggleTheme} />
+                <span className="slider round"></span>
+            </label>
             <div className={`navbar-container ${darkMode ? "dark-mode" : ""}`}>
                 <div className="navbar-sections">
                     <div className="logo">
@@ -35,12 +40,7 @@ export default function NavBar({ scrollToVirtual, scrollToProjects, scrollToCont
                         <button className="nav-link" onClick={scrollToVirtual}>VIRTUAL AGENT</button>
                         <a href="/Resume_Abraham Zambrano Tablante.pdf" download="Abraham_Resume.pdf" className="nav-link">
                             DOWNLOAD MY RESUME
-                        </a>
-                        {/* Toggle Switch */}
-                        <label className="switch">
-                            <input type="checkbox" checked={darkMode} onChange={toggleTheme} />
-                            <span className="slider round"></span>
-                        </label>   
+                        </a>   
                     </nav>
                 </div>
             </div>
