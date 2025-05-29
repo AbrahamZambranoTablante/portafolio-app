@@ -2,8 +2,9 @@ import '../Pages/CSS/Home.css'
 import Contact from './Contact';
 import Projects from './Projects';
 import Blog from './Blog';
+import VirtualAgent from './VirtualAgent';
 
-export default function Home ({projectsRef, contactRef, blogRef, darkMode}) {
+export default function Home ({virtualRef, projectsRef, contactRef, blogRef, darkMode}) {
 
     return (
         <>
@@ -32,6 +33,10 @@ export default function Home ({projectsRef, contactRef, blogRef, darkMode}) {
                 <section ref={projectsRef}>
                     <Projects darkMode={darkMode} />
                 </section>
+                
+                <section ref={virtualRef}>
+                    <VirtualAgent/>
+                </section>
 
                 <section ref={blogRef}>
                     <Blog/>
@@ -40,6 +45,7 @@ export default function Home ({projectsRef, contactRef, blogRef, darkMode}) {
                 <section ref={contactRef}>
                     <Contact/>
                 </section>
+
             </div>
         </>
     )

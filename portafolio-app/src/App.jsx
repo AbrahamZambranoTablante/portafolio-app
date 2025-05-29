@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import NavBar from './Components/NavBar';
 import Home from './Pages/Home';
 import NotFound from './Pages/NotFound';
-import VirtualAgent from './Pages/VirtualAgent';
 
 function App() {
 
@@ -26,6 +25,7 @@ function App() {
     const projectsRef = useRef(null);
     const contactRef = useRef(null);
     const blogRef = useRef(null);
+    const virtualRef = useRef(null)
 
     const scrollToSection = (ref) => {
         ref.current.scrollIntoView({ behavior: "smooth" });
@@ -39,11 +39,11 @@ function App() {
             scrollToBlog={() => scrollToSection(blogRef)}
             scrollToProjects={() => scrollToSection(projectsRef)}
             scrollToContact={() => scrollToSection(contactRef)}
+            scrollToVirtual={() => scrollToSection(virtualRef)}
             darkMode={darkMode} setDarkMode={setDarkMode}
           />
           <Routes>
-            <Route path="/" element={<Home projectsRef={projectsRef} contactRef={contactRef} darkMode={darkMode} blogRef={blogRef}/>}/>
-            <Route path='/virtualagent' element={ <VirtualAgent /> } />
+            <Route path="/" element={<Home virtualRef={virtualRef} projectsRef={projectsRef} contactRef={contactRef} darkMode={darkMode} blogRef={blogRef}/>}/>
             <Route path='*' element={ <NotFound /> } />
           </Routes>
         </Router>
