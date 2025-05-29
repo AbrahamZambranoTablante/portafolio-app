@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import "../Pages/CSS/NavBar.css";
 import React, { useEffect } from "react";
 
-export default function NavBar({ scrollToVirtual, scrollToProjects, scrollToContact, scrollToBlog, darkMode, setDarkMode }) {
+export default function NavBar({scrollToAbout, scrollToVirtual, scrollToProjects, scrollToContact, scrollToBlog, darkMode, setDarkMode }) {
     
     const scrollToTop = () => {
         window.scrollTo({ top: 0, behavior: "smooth" });
@@ -34,6 +34,7 @@ export default function NavBar({ scrollToVirtual, scrollToProjects, scrollToCont
                         <Link to={"/"}><img onClick={scrollToTop} style={{ cursor: "pointer" }} src="/azlogo.jpg" alt="Logo" /> </Link>
                     </div>
                     <nav className="links">
+                        <button className="nav-link" onClick={scrollToAbout}>ABOUT ME</button>
                         <button className="nav-link" onClick={scrollToBlog}>BLOG</button> 
                         <button className="nav-link" onClick={scrollToContact}>CONTACT</button> 
                         <button className="nav-link" onClick={scrollToProjects}>PROJECTS</button> 

@@ -26,9 +26,10 @@ function App() {
     const contactRef = useRef(null);
     const blogRef = useRef(null);
     const virtualRef = useRef(null)
+    const aboutmeRef = useRef(null)
 
     const scrollToSection = (ref) => {
-        ref.current.scrollIntoView({ behavior: "smooth" });
+        ref.current.scrollIntoView({ behavior: "smooth" });``
     };
 
   return (
@@ -40,10 +41,11 @@ function App() {
             scrollToProjects={() => scrollToSection(projectsRef)}
             scrollToContact={() => scrollToSection(contactRef)}
             scrollToVirtual={() => scrollToSection(virtualRef)}
+            scrollToAbout={() => scrollToSection(aboutmeRef)}
             darkMode={darkMode} setDarkMode={setDarkMode}
           />
           <Routes>
-            <Route path="/" element={<Home virtualRef={virtualRef} projectsRef={projectsRef} contactRef={contactRef} darkMode={darkMode} blogRef={blogRef}/>}/>
+            <Route path="/" element={<Home aboutmeRef={aboutmeRef} virtualRef={virtualRef} projectsRef={projectsRef} contactRef={contactRef} darkMode={darkMode} blogRef={blogRef}/>}/>
             <Route path='*' element={ <NotFound /> } />
           </Routes>
         </Router>
